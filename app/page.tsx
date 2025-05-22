@@ -62,21 +62,34 @@ export default function Home() {
                   <span className="text-white">Todos os tipos e marcas de baterias</span>
                 </li>
               </ul>
-              <div className="flex justify-center pt-6">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 rounded-full text-base px-8 py-7 h-auto animate-pulse"
-                >
-                  <Link href="https://wa.me/5516994593392" target="_blank" rel="noopener noreferrer">
-                    <MessageSquare className="mr-2 h-5 w-5" />
-                    Peça agora pelo WhatsApp
-                  </Link>
-                </Button>
-              </div>
-              <p className="text-zinc-300 text-xl font-semibold mt-6 bg-black/50 py-3 px-6 rounded-full inline-block">
-                Compre com Garantia e Segurança, pague apenas ao receber!
-              </p>
+              <div className="flex flex-col items-center gap-4 pt-6">
+  <Button
+    asChild
+    size="lg"
+    className="w-full max-w-sm bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-600 hover:to-cyan-500 rounded-full text-base px-8 py-7 h-auto animate-pulse"
+  >
+    <Link href="tel:+5516994593392">
+      <Phone className="mr-2 h-5 w-5" />
+      Ligar Agora
+    </Link>
+  </Button>
+
+  <Button
+    asChild
+    size="lg"
+    className="w-full max-w-sm bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 rounded-full text-base px-8 py-7 h-auto animate-pulse"
+  >
+    <Link href="https://wa.me/5516994593392" target="_blank" rel="noopener noreferrer">
+      <MessageSquare className="mr-2 h-5 w-5" />
+      Peça agora pelo WhatsApp
+    </Link>
+  </Button>
+</div>
+
+<p className="text-zinc-300 text-xl font-semibold mt-6 bg-black/50 py-3 px-6 rounded-full inline-block">
+  Compre com Garantia e Segurança, pague apenas ao receber!
+</p>
+
             </div>
           </div>
         </section>    
@@ -678,24 +691,25 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="mt-20 text-center">
-              <div className="inline-block p-10 bg-gradient-to-b from-zinc-900 to-zinc-950 rounded-2xl border border-zinc-800 shadow-xl">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 rounded-full text-base px-8 py-6 h-auto mb-6"
-                >
-                  <Link href="https://wa.me/5516994593392" target="_blank" rel="noopener noreferrer">
-                    <Zap className="mr-2 h-5 w-5" />
-                    Solicitar Orçamento Agora
-                  </Link>
-                </Button>
-                <p className="text-2xl font-medium mb-3 text-white">
-                  Entregamos e Instalamos na sua localização em minutos
-                </p>
-                <p className="text-zinc-300 text-lg">Pagando apenas ao receber! Parcelamos em até 10x sem juros</p>
-              </div>
-            </div>
+           <div className="mt-20 text-center px-4 sm:px-0">
+  <div className="inline-block p-6 sm:p-10 w-full max-w-[90vw] sm:max-w-none bg-gradient-to-b from-zinc-900 to-zinc-950 rounded-2xl border border-zinc-800 shadow-xl">
+    <Button
+      asChild
+      size="lg"
+      className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 rounded-full text-base px-6 py-4 sm:px-8 sm:py-6 h-auto mb-6"
+    >
+      <Link href="https://wa.me/5516994593392" target="_blank" rel="noopener noreferrer">
+        <Zap className="mr-2 h-5 w-5" />
+        Solicitar Orçamento Agora
+      </Link>
+    </Button>
+    <p className="text-xl sm:text-2xl font-medium mb-2 sm:mb-3 text-white">
+      Entregamos e Instalamos na sua localização em minutos
+    </p>
+    <p className="text-zinc-300 text-base sm:text-lg">Pagando apenas ao receber! Parcelamos em até 10x sem juros</p>
+  </div>
+</div>
+
           </div>
         </section>
 
