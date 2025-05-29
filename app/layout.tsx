@@ -1,7 +1,6 @@
 import type React from "react"
 import "@/app/globals.css"
 import type { Metadata } from "next"
-import { Html, Head, Main, NextScript } from "next/document"
 
 export const metadata: Metadata = {
   title: "Combate Baterias - Entrega e Instalação Grátis em Ribeirão Preto",
@@ -19,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        {/* Google tag (gtag.js) */}
+      <body className="min-h-screen bg-black font-sans antialiased">
+        {/* Google Analytics */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-SBLJJTY472"
@@ -35,17 +34,6 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-      <body className="min-h-screen bg-black font-sans antialiased">
-        {/* Fallback para quando o JS estiver desativado */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
         {children}
       </body>
     </html>
